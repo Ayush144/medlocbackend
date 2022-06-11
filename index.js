@@ -20,7 +20,7 @@ app.use(express.json());
 // enable cors
 app.use(cors());
 
-const PORT = process.env.PORT || 7000;
+//const PORT = process.env.PORT || 7000;
 
 
 
@@ -56,6 +56,4 @@ app.use('/api/user', require('./routes/users'));
 
 
 
-app.listen(PORT,()=>{
-    console.log(`Server running in ${process.env.NODE_ENV} mode on port ${PORT}`);
-})
+app.listen()
