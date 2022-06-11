@@ -56,4 +56,6 @@ app.use('/api/user', require('./routes/users'));
 
 
 
-app.listen()
+app.listen(3000,()=>{
+    console.log(`Server running in ${process.env.NODE_ENV} mode on port`);
+})
